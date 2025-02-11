@@ -60,7 +60,7 @@ fun LoginForm(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth(),
             label = { Text("Username") },
             singleLine = true,
-            leadingIcon = {
+            trailingIcon = {
                 Icon(imageVector = Icons.Filled.Person, contentDescription = "User Icon")
             }
         )
@@ -72,7 +72,7 @@ fun LoginForm(modifier: Modifier = Modifier) {
             passwordText, { passwordText = it }, Modifier.fillMaxWidth(),
             label = { Text("Password") },
             singleLine = true,
-            leadingIcon = {
+            trailingIcon = {
                 Icon(
                     imageVector = if (passwordVisible) Icons.Filled.Visibility else Icons.Filled.VisibilityOff,
                     contentDescription = "Toggle Password Visibility",
